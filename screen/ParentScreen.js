@@ -4,7 +4,6 @@ import ItemComp from './ItemComp'
 import CounterComp from './CounterComp'
 
 const ParentScreen = () => {
-    const [openmodal, setOpenModal] = useState(true);
 
     useEffect(() => {
         GetList('1')
@@ -76,18 +75,7 @@ const ParentScreen = () => {
 
 
             </View>
-            <Modal
-                transparent={true}
-                visible={openmodal}
-                onDismiss={() => {
-                    setOpenModal(false)
-                }}
-
-            >
-                <View style={{backgroundColor:'#fff',padding:20,margin:10,borderRadius:10}}>
-                    <Text style={{fontSize:16,color:"#000",fontWeight:'bold'}}>{notifdata}</Text>
-                </View>
-            </Modal>
+           
         </View>
     )
 }
