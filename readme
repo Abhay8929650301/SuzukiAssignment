@@ -1,0 +1,19 @@
+In this assignment, you will create a React Native application with the following features:
+
+Parent Screen with Paginated List:
+
+The parent screen displays a list of data items, which are loaded in pages (pagination).
+New pages of data are fetched and displayed as the user scrolls to the end of the list.
+Increment and Decrement Counter Component:
+
+A counter component is included on the parent screen, allowing users to increment and decrement a count value.
+The counter component is optimized to avoid unnecessary re-renders by using memoization techniques.
+Navigation to Detail Screen:
+
+When a user clicks on an item in the list, the app navigates to a detail screen.
+The detail screen shows more information about the selected item.
+Heavy Calculation with Memoization:
+
+The detail screen performs a heavy calculation (e.g., computing a factorial) based on the item's data.
+Memoization is used to optimize performance and avoid recalculating results unnecessarily.
+By following this structure, the application efficiently manages state updates, handles large datasets with pagination, and ensures smooth navigation and performance, even with computationally intensive tasks.
